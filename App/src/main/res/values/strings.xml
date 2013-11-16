@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BindServiceExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_random_number">Get Random Number</string>
+    <string name="get_number">Get Number</string>
+
+</resources>

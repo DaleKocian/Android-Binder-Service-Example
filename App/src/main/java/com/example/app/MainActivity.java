@@ -7,7 +7,7 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,12 +18,12 @@ import android.widget.Toast;
 
 import com.example.app.services.LocalService;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int NUMBER_TO_ASK_FOR = 5;
     private static final String DEFAULT_CASE_HIT_ON_GET_NUMBER = "Default case hit on get number call.";
     private static final String ERROR_NO_NUM_WAS_ASKED = "Error: we didn't ask for any numbers.";
-    LocalService mService;
+    private LocalService mService;
     boolean mBound = false;
 
     @Override

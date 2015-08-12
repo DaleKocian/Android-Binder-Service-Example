@@ -11,6 +11,7 @@ import java.util.Random;
  * Created by dkocian on 11/16/13.
  */
 public class LocalService extends Service {
+    public static final int UPPER_BOUND = 100;
     // Binder given to clients
     private final IBinder mBinder = new LocalBinder();
     // Random number generator
@@ -23,7 +24,7 @@ public class LocalService extends Service {
 
     // Method for clients
     public int getRandomNumber() {
-        return mGenerator.nextInt(100);
+        return mGenerator.nextInt(UPPER_BOUND);
     }
 
     // Method for clients
